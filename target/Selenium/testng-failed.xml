@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.testng.reporters.EmailableReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+  </listeners>
+  <test thread-count="5" name="Amazon Search Module(failed)">
+    <classes>
+      <class name="AmazonTest">
+        <methods>
+          <include name="ValidateAmazonResults"/>
+          <include name="OpenWebsite"/>
+          <include name="close"/>
+          <include name="getAmazonSearchResults"/>
+        </methods>
+      </class> <!-- AmazonTest -->
+    </classes>
+  </test> <!-- Amazon Search Module(failed) -->
+</suite> <!-- Failed suite [Selenium] -->

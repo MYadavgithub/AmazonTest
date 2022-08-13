@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium" verbose="1">
+	<listeners>
+		<listener class-name="org.testng.reporters.EmailableReporter"></listener>
+		<listener class-name="org.testng.reporters.FailedReporter"></listener>
+</listeners>
+	<test name="Amazon Search Module" enabled="true">
+		<classes>
+			<class name="AmazonTest"/>
+		</classes>
+	</test>
+</suite>
